@@ -30,11 +30,11 @@ export default class SMSForm extends Component {
   onSubmit(event) {
     event.preventDefault();
     this.setState({ submitting: true });
-    console.log('Request Payload:', JSON.stringify(this.state.message));
-    fetch('/api/messages', {
-      method: 'POST',
+    console.log("Request Payload:", JSON.stringify(this.state.message));
+    fetch("/api/messages", {
+      method: "POST",
       headers: {
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json",
       },
       body: JSON.stringify(this.state.message),
     })
@@ -45,8 +45,8 @@ export default class SMSForm extends Component {
             error: false,
             submitting: false,
             message: {
-              to: '',
-              body: '',
+              to: "",
+              body: "",
             },
           });
         } else {
@@ -57,7 +57,7 @@ export default class SMSForm extends Component {
         }
       })
       .catch((error) => {
-        console.error('Error:', error);
+        console.error("Error:", error);
         this.setState({
           error: true,
           submitting: false,
@@ -75,22 +75,22 @@ export default class SMSForm extends Component {
     };
 
     fetch(url, {
-      method: 'POST',
+      method: "POST",
       headers: {
-        'Content-Type': 'application/x-www-form-urlencoded',
+        "Content-Type": "application/x-www-form-urlencoded",
         Authorization: `Basic ${btoa(`${accountSid}:${authToken}`)}`,
       },
       body: new URLSearchParams(data),
     })
       .then((res) => {
         if (res.ok) {
-          console.log('SMS sent successfully');
+          console.log("SMS sent successfully");
         } else {
-          console.error('Error sending SMS');
+          console.error("Error sending SMS");
         }
       })
       .catch((error) => {
-        console.error('Error sending SMS:', error);
+        console.error("Error sending SMS:", error);
       });
   }
 
@@ -119,7 +119,9 @@ export default class SMSForm extends Component {
             onChange={this.onHandleChange}
           />
         </div>
-        <button type="submit" disabled={this.state.submitting}>Send</button>
+        <button type="submit" disabled={this.state.submitting}>
+          Send
+        </button>
       </form>
     );
   }
