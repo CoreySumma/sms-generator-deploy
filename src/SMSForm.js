@@ -1,10 +1,9 @@
 import React, { Component } from "react";
 import "./SMSForm.css";
 
-const accountSid = 'ACb63d51513aa4208cb4c5f14101057149';
-const authToken = '064f2121e70fa810d3b006d2ff82934b';
-const phoneNumber = '+18444920353';
-
+const accountSid = process.env.REACT_APP_TWILIO_ACCOUNT_SID;
+const authToken = process.env.REACT_APP_TWILIO_AUTH_TOKEN;
+const phoneNumber = process.env.REACT_APP_TWILIO_PHONE_NUMBER;
 
 export default class SMSForm extends Component {
   constructor(props) {
