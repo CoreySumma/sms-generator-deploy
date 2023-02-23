@@ -21,13 +21,12 @@ export default function App() {
   };
 
   const doStuff = async () => {
-    // let object = { ...option, prompt: input };
     const response = await openai.createCompletion({
       model: "text-davinci-003",
-      prompt: `Please write me a hilarious short text with a dark undertone about how I can't talk right right now to my${relationData}`,
+      prompt: `Please write me a text message to my ${relationData} that is funny, with a lot of dark humor, and a lot of sarcasm, that explains that I am busy.  Please add in something about how I need to call them later after I am done doing something completely unrealistic with sarcasm.  The last sentence should be a fact about something random and dark that makes no sense that has to do with anything. Depending on the person I am asking you to send it to, please tailor it to them! Each time I ask you to write me a text, please produce something you have not said before.`,
       temperature: 0,
       max_tokens: 100,
-      top_p: 1,
+      temperature: .9,
       frequency_penalty: 0.0,
       presence_penalty: 0.0,
     });
