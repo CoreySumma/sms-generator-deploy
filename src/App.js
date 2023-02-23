@@ -16,23 +16,15 @@ export default function App() {
   const [result, setResult] = useState("");
   const [relationData, setRelationData] = useState("");
 
-  // const selectOption = (option) => {
-  //   setOption(option);
-  // };
-
   const updateRelation = (relation) => {
     setRelationData(relation);
-    console.log(relation)
-  }
-
-  const onInputChange = (event) => {
-    setInput(event.target.value);
   };
 
   const doStuff = async () => {
     // let object = { ...option, prompt: input };
     const response = await openai.createCompletion({
       model: "text-davinci-003",
+      prompt: `Please write me a hilarious short text with a dark undertone about how I can't talk right right now to my${relationData}`,
       temperature: 0,
       max_tokens: 100,
       top_p: 1,
@@ -43,15 +35,15 @@ export default function App() {
   };
 
   useEffect(() => {
-    doStuff();
-  }, [option, input]);
+    console.log(result)
+  }, [result]);
 
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <RelationForm updateRelation={updateRelation}/>
-        <SMSForm doStuff={doStuff} setInput={setInput} result={result} />
+        <RelationForm updateRelation={updateRelation} doStuff={doStuff} result={result}/>
+        <SMSForm doStuff={doStuff} result={result} updateRelation={updateRelation}/>
         <div>
           <p>{relationData}</p>
         </div>

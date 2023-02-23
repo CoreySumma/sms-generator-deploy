@@ -2,17 +2,24 @@ import React, { useState } from "react";
 import './RelationForm.css';
 
 
-export default function RelationForm({updateRelation}) {
+export default function RelationForm({updateRelation, doStuff}) {
   const [relation, setRelation] = useState("");
   
   const handleChange = (e) => {
+    e.preventDefault();
     setRelation(e.target.value);
     updateRelation(e.target.value);
   };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    await doStuff();
+  }
+
   return (
     <form>
       <div className="response-form">
-        <label htmlFor="relation">Relation To Me:</label>
+        <label htmlFor="relation">Relation To You:</label>
         <hr />
         <select
         className="selector"
@@ -33,6 +40,7 @@ export default function RelationForm({updateRelation}) {
       </div>
       <button
       className="response-btn"
+      onClick={handleSubmit}
       >Generate Response</button>
     </form>
   );
