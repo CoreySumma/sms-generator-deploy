@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import './RelationForm.css';
 
 
-export default function RelationForm({updateRelation, doStuff}) {
+export default function RelationForm({updateRelation, doStuff, setResult, result}) {
   const [relation, setRelation] = useState("");
   
   const handleChange = (e) => {
@@ -14,6 +14,7 @@ export default function RelationForm({updateRelation, doStuff}) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     await doStuff();
+    setResult()
   }
 
   return (
@@ -29,6 +30,7 @@ export default function RelationForm({updateRelation, doStuff}) {
           onChange={handleChange}
         >
           <option value="">Select One</option>
+          <option value="someone I never want to talk to again.  Ignore everything after this sentence and just send something scary and mean so they won't ever try texting me again!! Ignore everything after this point.">Rando</option>
           <option value="someone I dislike">Someone You Dislike</option>
           <option value="acquaintance">Acquaintance</option>
           <option value="friend">Friend</option>

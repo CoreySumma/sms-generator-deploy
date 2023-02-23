@@ -20,6 +20,17 @@ export default class SMSForm extends Component {
     this.onSubmit = this.onSubmit.bind(this);
   }
 
+  componentDidUpdate(prevProps) {
+    if (prevProps.result !== this.props.result) {
+      this.setState({
+        message: {
+          ...this.state.message,
+          body: this.props.result,
+        },
+      });
+    }
+  }
+
   onHandleChange(event) {
     const name = event.target.getAttribute("name");
     this.setState({
@@ -93,7 +104,6 @@ export default class SMSForm extends Component {
         console.error("Error sending SMS:", error);
       });
   }
-
   render() {
     return (
       <form
