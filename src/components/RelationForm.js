@@ -29,9 +29,10 @@ export default function RelationForm({updateRelation, doStuff}) {
           onChange={handleChange}
         >
           <option value="">Select One</option>
-          <option value="friend">Friend</option>
+          <option value="someone I dislike">Someone You Dislike</option>
           <option value="acquaintance">Acquaintance</option>
-          <option value="significant-other">Significant other</option>
+          <option value="friend">Friend</option>
+          <option value="significant-other">Significant Other</option>
           <option value="mother">Mother</option>
           <option value="father">Father</option>
           <option value="sister">Sister</option>

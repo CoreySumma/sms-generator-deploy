@@ -101,7 +101,7 @@ export default class SMSForm extends Component {
         className={this.state.error ? "error sms-form" : "sms-form"}
       >
         <div>
-          <label htmlFor="to">To:</label>
+          <label htmlFor="to">Phone Number:</label>
           <input
             type="tel"
             name="to"
