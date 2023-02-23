@@ -11,6 +11,12 @@
   width: 100%;
   box-sizing: border-box;
 }
+#message-prompt {
+  font-size: 1em;
+  width: 100%;
+  box-sizing: border-box;
+  height: 5em;
+}
 .sms-form div {
   margin-bottom: 0.5em;
 }
@@ -19,5 +25,5 @@
   width: 100%;
 }
 .sms-form.error {
-  outline: 2px solid #f00;
+  outline: 2px solid rgb(116, 245, 159);
 }

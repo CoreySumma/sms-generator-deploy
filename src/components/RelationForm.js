@@ -2,16 +2,18 @@ import React, { useState } from "react";
 import './RelationForm.css';
 
 
-export default function RelationForm() {
+export default function RelationForm({updateRelation}) {
   const [relation, setRelation] = useState("");
   
   const handleChange = (e) => {
     setRelation(e.target.value);
+    updateRelation(e.target.value);
   };
   return (
     <form>
       <div className="response-form">
         <label htmlFor="relation">Relation To Me:</label>
+        <hr />
         <select
         className="selector"
           id="relation"

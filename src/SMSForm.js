@@ -113,6 +113,8 @@ export default class SMSForm extends Component {
         <div>
           <label htmlFor="body">Message:</label>
           <textarea
+            cols={30}
+            rows={10}
             name="body"
             id="body"
             value={this.state.message.body}
