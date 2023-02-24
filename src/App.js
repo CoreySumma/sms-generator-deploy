@@ -42,9 +42,6 @@ export default function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <RelationForm updateRelation={updateRelation} doStuff={doStuff} setResult={setResult} result={result}/>
         <SMSForm doStuff={doStuff} result={result} updateRelation={updateRelation}/>
-        <div>
-          <p>{relationData}</p>
-        </div>
       </header>
     </div>
   );
