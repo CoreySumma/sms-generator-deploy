@@ -14,7 +14,6 @@ export default function RelationForm({updateRelation, doStuff, setResult, result
   const handleSubmit = async (e) => {
     e.preventDefault();
     await doStuff();
-    setResult()
   }
 
   return (
