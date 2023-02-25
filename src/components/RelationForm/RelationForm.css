@@ -14,34 +14,47 @@
   width:28vmin; 
 } */
 
-button{
+button {
   width: 300px;
   height: 50px;
   border: none;
   outline: none;
-  background: #bababa;
+  background: rgb(86, 153, 175);
   color: black;
   font-size: 22px;
   line-height: 2px;
   border-radius: 40px;
   text-align: center;
-  box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4);
+  box-shadow: 0 6px 20px -5px rgba(0, 0, 0, 0.4);
   position: relative;
   overflow: hidden;
   cursor: pointer;
-	font-family: 'Poppins', sans-serif;
-	transition: 400ms ease;
+  font-family: "Poppins", sans-serif;
+  transition: 400ms ease;
 }
 
 button:hover {
   background: transparent;
-  border: solid black 1px;
-	color: white;
+  border: rgb(37, 173, 137) solid 1px;
+  color: white;
 }
 
+@media screen and (max-width: 1024px) {
+  button {
+		width: 222px;
+    height: 40px;
+		font-size: 20px;
+		margin-top: 4px;
+		margin-bottom: none;
+  }
+}
 
-
-
-
-
-
+@media screen and (max-width: 600px) {
+  button {
+    width: 222px;
+    height: 45px;
+		font-size: 20px;
+		margin-top: 4px;
+		margin-bottom: none;
+  }
+}

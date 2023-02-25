@@ -1,9 +1,9 @@
 .App {
   text-align: center;
+  background-color: #282c34;
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -12,16 +12,15 @@
   font-size: calc(4px + 2vmin);
   color: white;
   /* font-family: 'Roboto Slab', serif */
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .App-logo {
   animation: App-logo-spin infinite 10s linear;
-  height: 25vmin;
+  height: 30vmin;
   margin-bottom: 2vmin;
   transition: transform 5s ease-out;
 }
-
 
 @keyframes App-logo-spin {
   from {
@@ -53,3 +52,16 @@
     transform: rotate(0deg);
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .App-header {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .App-header {
+    font-size: 18px;
+  }
+}
+
