@@ -11,7 +11,8 @@
   justify-content: center;
   font-size: calc(4px + 2vmin);
   color: white;
-  font-family: 'Roboto Slab', serif;
+  /* font-family: 'Roboto Slab', serif */
+  font-family: 'Poppins', sans-serif;
 }
 
 .App-logo {

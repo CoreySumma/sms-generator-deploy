@@ -3,11 +3,38 @@
   margin: 2vmin;
 }
 
-.response-btn {
+/* .response-btn {
+  border: 2px solid black;
   font-size: 1em;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+  border-radius: 4px;  
+  overflow: hidden;
+  cursor: pointer;  
+  padding: .3vmin; 
+  width:28vmin; 
+} */
+
+button{
+  width: 300px;
+  height: 50px;
+  border: none;
+  outline: none;
+  background: #474747;
+  color: #fff;
+  font-size: 22px;
+  line-height: 6px;
+  border-radius: 40px;
+  text-align: center;
+  box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+	font-family: 'Poppins', sans-serif;
 }
 
-.response-form > label {
-  font-size: 2em;
-}
+
+
+
+
+
+
