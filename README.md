@@ -1,4 +1,4 @@
-<div id="description" align="center">
+<div align="center">
 
 <u>SMS AI Generator</u>
 
