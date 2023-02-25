@@ -19,10 +19,10 @@ button{
   height: 50px;
   border: none;
   outline: none;
-  background: #474747;
-  color: #fff;
+  background: #bababa;
+  color: black;
   font-size: 22px;
-  line-height: 6px;
+  line-height: 2px;
   border-radius: 40px;
   text-align: center;
   box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4);
@@ -30,6 +30,13 @@ button{
   overflow: hidden;
   cursor: pointer;
 	font-family: 'Poppins', sans-serif;
+	transition: 400ms ease;
+}
+
+button:hover {
+  background: transparent;
+  border: solid black 1px;
+	color: white;
 }
 
 
