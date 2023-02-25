@@ -29,7 +29,7 @@ export default function App() {
       presence_penalty: 0.0,
     });
     setResult(response.data.choices[0].text.trim());
-    console.log('this is doStuff result --->', result);
+    console.log("this is doStuff result --->", result);
   };
 
   useEffect(() => {
@@ -39,7 +39,9 @@ export default function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <a href="https://coreysumma.github.io/portfolioweb/">
+          <img src={logo} className="App-logo" alt="logo" />
+        </a>
         <RelationForm
           updateRelation={updateRelation}
           doStuff={doStuff}
