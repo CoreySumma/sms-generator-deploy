@@ -96,8 +96,10 @@ export default class SMSForm extends Component {
       .then((res) => {
         if (res.ok) {
           console.log("SMS sent successfully");
+          alert("SMS sent successfully")
         } else {
           console.error("Error sending SMS");
+          alert("Email me at CoreySumma@gmail.com and let me know funds are depleted! Thanks")
         }
       })
       .catch((error) => {

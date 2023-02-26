@@ -8,7 +8,7 @@ import { useState, useEffect } from "react";
 
 export default function App() {
   const configuration = new Configuration({
-    apiKey: process.env.REACT_APP_OPEN_AI_KEY,
+    // apiKey: process.env.REACT_APP_OPEN_AI_KEY,
   });
   const openai = new OpenAIApi(configuration);
   const [result, setResult] = useState("");
@@ -29,11 +29,9 @@ export default function App() {
       presence_penalty: 0.0,
     });
     setResult(response.data.choices[0].text.trim());
-    console.log("this is doStuff result --->", result);
   };
 
   useEffect(() => {
-    console.log("this is useEffect result --->", result);
   }, [result]);
 
   return (
