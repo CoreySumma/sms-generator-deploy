@@ -15,7 +15,8 @@
 }
 
 .App-logo {
-  animation: App-logo-spin 1 2s linear;
+  animation: App-logo-spin 1800ms linear 1;
+  animation-timing-function: ease-out;
   height: 30vmin;
   margin-bottom: 2vmin;
   /* filter: blur(0);
