@@ -37,7 +37,6 @@ export default class SMSForm extends Component {
       message: { ...this.state.message, [name]: event.target.value },
     });
   }
-  
 
   onSubmit(event) {
     event.preventDefault();
@@ -90,7 +89,7 @@ export default class SMSForm extends Component {
       method: "POST",
       headers: {
         "Content-Type": "application/x-www-form-urlencoded",
-        "Authorization": `Basic ${btoa(`${accountSid}:${authToken}`)}`,
+        Authorization: `Basic ${btoa(`${accountSid}:${authToken}`)}`,
       },
       body: new URLSearchParams(data),
     })
@@ -103,7 +102,7 @@ export default class SMSForm extends Component {
       })
       .catch((error) => {
         console.error("Error sending SMS:", error);
-      })
+      });
   }
   render() {
     return (
@@ -114,6 +113,7 @@ export default class SMSForm extends Component {
         <div>
           <label htmlFor="to">Phone Number:</label>
           <input
+            className="poppins"
             type="tel"
             name="to"
             id="to"

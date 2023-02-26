@@ -1,18 +1,13 @@
-.selector {
-  font-size: 1em;
-  margin: 2vmin;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
-/* .response-btn {
-  border: 2px solid black;
-  font-size: 1em;
-  margin-bottom: 5px;
-  border-radius: 4px;  
-  overflow: hidden;
-  cursor: pointer;  
-  padding: .3vmin; 
-  width:28vmin; 
-} */
+.selector {
+  font-size: 20px;
+  margin: 2vmin;
+	font-family: "Poppins", sans-serif;
+}
+.selector:focus {
+  outline-color: rgb(86, 153, 175);
+}
 
 button {
   width: 300px;

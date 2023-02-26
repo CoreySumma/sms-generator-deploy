@@ -21,7 +21,7 @@ export default function App() {
   const doStuff = async () => {
     const response = await openai.createCompletion({
       model: "text-davinci-003",
-      prompt: `Without using quotation marks please write me a custom short text message to my ${relationData} that is funny, with a lot of dark humor, and a lot of sarcasm, that explains that I am busy.  Please add in something about how I need to call them later after I am done doing something completely unrealistic with sarcasm.  The last sentence should be a fact about something completely random and dark that makes no sense that has nothing to do with anything. Depending on the person I am asking you to send it to, please tailor it to them! Each time I ask you to write me a text, please produce something you have not said before.`,
+      prompt: `Without using quotation marks please write me a custom short text message to my ${relationData} that is funny, with a lot of dark humor and sarcasm, that explains that I am busy. Please add in something about how I need to call them later after I am done doing something completely unrealistic. The last sentence should be a true fact about something completely random that has nothing to do with anything. Depending on the person I am asking you to send it to, please tailor it to them! Each time I ask you to write me a text, please produce something you have not said before.`,
       temperature: 0.5,
       max_tokens: 100,
       temperature: 0.9,
