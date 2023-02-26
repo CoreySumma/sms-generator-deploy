@@ -15,23 +15,14 @@
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 10s linear;
+  animation: App-logo-spin 1 2s linear;
   height: 30vmin;
   margin-bottom: 2vmin;
-  transition: transform 5s ease-out;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 .App-logo:hover {
-  animation: App-logo-spin-reverse 2s linear infinite;
+  animation: App-logo-spin-reverse 2s linear 1;
+  animation-timing-function: ease-in-out;
 }
 
 @keyframes App-logo-spin {
