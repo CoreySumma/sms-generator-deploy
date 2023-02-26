@@ -29,7 +29,7 @@ button {
   overflow: hidden;
   cursor: pointer;
   font-family: "Poppins", sans-serif;
-  transition: all 0.2s ease-in-out !important;
+  transition: all 0.1s ease-in-out !important; 
 }
 
 button:hover {
@@ -40,14 +40,11 @@ button:hover {
 }
 
 button:focus {
-  outline-color: rgb(86, 153, 175);
   transform: scale(1.1);
-  transition: transform 0.1s ease-in-out;
 }
 
-button:not(:focus) {
+button:focus:not(:active) {
   transform: scale(1);
-  transition: transform 0.2s ease-out;
 }
 
 @media screen and (max-width: 1024px) {
@@ -56,7 +53,7 @@ button:not(:focus) {
     height: 40px;
 		font-size: 20px;
 		margin-top: 4px;
-		margin-bottom: none;
+		margin-bottom: 0;
   }
 }
 
@@ -66,6 +63,6 @@ button:not(:focus) {
     height: 45px;
 		font-size: 20px;
 		margin-top: 4px;
-		margin-bottom: none;
+		margin-bottom: 0;
   }
 }
