@@ -18,11 +18,16 @@
   animation: App-logo-spin 1 2s linear;
   height: 30vmin;
   margin-bottom: 2vmin;
+  /* filter: blur(0);
+  transition: all 0.5s ease-in-out; Excuse the blur code I want to remember to try this out on another project*/ 
 }
 
 .App-logo:hover {
   animation: App-logo-spin-reverse 2s linear 1;
   animation-timing-function: ease-in-out;
+  /* -moz-filter: blur(2px);
+  -webkit-filter: blur(2px);
+  filter: blur(2px); */
 }
 
 @keyframes App-logo-spin {

@@ -25,13 +25,14 @@ button {
   overflow: hidden;
   cursor: pointer;
   font-family: "Poppins", sans-serif;
-  transition: 400ms ease;
+  transition: all 0.3s ease-in-out !important;
 }
 
 button:hover {
   background: transparent;
   border: rgb(37, 173, 137) solid 1px;
   color: white;
+	transition: background-color, border-color, color;
 }
 
 @media screen and (max-width: 1024px) {
