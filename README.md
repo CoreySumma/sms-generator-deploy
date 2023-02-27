@@ -3,12 +3,12 @@
 <u>SMS AI Generator</u>
 
 <img
-    src="src/assets/SPA ss.png"
+    src="src/assets/SMSss.png"
     width="800" height="400"
 />
 
 ## Description:
-This is a React application that utilizes Open AI's API, and Trilio's API to generate a random text to someone who is calling you so you can have some fun while filtering calls.
+This is a React application that utilizes Open AI's API, and Trilio's API to generate a random text to someone who is calling(Poen AI), and send it(Twilio), so you can have some fun while filtering calls.
 
 ## Using the App
 </div>
@@ -30,7 +30,6 @@ This is a React application that utilizes Open AI's API, and Trilio's API to gen
 ![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
 
 </div>
 

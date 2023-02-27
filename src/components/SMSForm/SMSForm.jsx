@@ -99,7 +99,7 @@ export default class SMSForm extends Component {
           alert("SMS sent successfully")
         } else {
           console.error("Error sending SMS");
-          alert("Email me at CoreySumma@gmail.com and let me know funds are depleted! Thanks")
+          alert("Failed To Send")
         }
       })
       .catch((error) => {
