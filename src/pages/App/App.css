@@ -1,0 +1,63 @@
+.App {
+  text-align: center;
+  background-color: #282c34;
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(4px + 2vmin);
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.App-logo {
+  animation: App-logo-spin 1800ms linear 1;
+  animation-timing-function: ease-out;
+  height: 30vmin;
+  margin-bottom: 2vmin;
+  /* filter: blur(0);
+  transition: all 0.5s ease-in-out; Excuse the blur code I want to remember to try this out on another project*/ 
+}
+
+.App-logo:hover {
+  animation: App-logo-spin-reverse 2s linear 1;
+  animation-timing-function: ease-in-out;
+  /* -moz-filter: blur(2px);
+  -webkit-filter: blur(2px);
+  filter: blur(2px); */
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes App-logo-spin-reverse {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .App-header {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .App-header {
+    font-size: 18px;
+  }
+}
+

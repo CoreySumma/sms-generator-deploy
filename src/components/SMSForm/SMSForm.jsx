@@ -60,11 +60,13 @@ export default class SMSForm extends Component {
               body: "",
             },
           });
+          alert("SMS sent successfully!");
         } else {
           this.setState({
             error: true,
             submitting: false,
           });
+          alert("SMS failed to send :(");
         }
       })
       .catch((error) => {
@@ -73,35 +75,6 @@ export default class SMSForm extends Component {
           error: true,
           submitting: false,
         });
-      });
-
-    const { to, body } = this.state.message;
-
-    const url = `https://api.twilio.com/2010-04-01/Accounts/${accountSid}/Messages`;
-
-    const data = {
-      To: to,
-      Body: body,
-      From: phoneNumber,
-    };
-
-    fetch(url, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/x-www-form-urlencoded",
-        Authorization: `Basic ${btoa(`${accountSid}:${authToken}`)}`,
-      },
-      body: new URLSearchParams(data),
-    })
-      .then((res) => {
-        if (res.ok) {
-          console.log("SMS sent successfully");
-        } else {
-          console.error("Error sending SMS");
-        }
-      })
-      .catch((error) => {
-        console.error("Error sending SMS:", error);
       });
   }
   render() {
@@ -113,6 +86,7 @@ export default class SMSForm extends Component {
         <div>
           <label htmlFor="to">Phone Number:</label>
           <input
+            className="poppins"
             type="tel"
             name="to"
             id="to"

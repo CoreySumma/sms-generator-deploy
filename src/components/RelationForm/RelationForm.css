@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+#larger {
+  font-size: larger;
+}
+
+.selector {
+  font-size: 20px;
+  margin: 2vmin;
+	font-family: "Poppins", sans-serif;
+}
+.selector:focus {
+  outline-color: rgb(86, 153, 175);
+}
+
+button {
+  width: 300px;
+  height: 50px;
+  border: none;
+  outline: none;
+  background: rgb(86, 153, 175);
+  color: black;
+  font-size: 22px;
+  line-height: 2px;
+  border-radius: 40px;
+  text-align: center;
+  box-shadow: 0 6px 20px -5px rgba(0, 0, 0, 0.4);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  transition: all 400ms ease-in-out !important ; 
+}
+
+button:hover {
+  background: transparent;
+  border: rgb(37, 173, 137) solid 1px;
+  color: white;
+	transition: background-color, border-color, color;
+	transform: scale(1.1);
+}
+
+button:not(:hover) {
+transform: scale(1.0);
+}
+
+
+button:focus {
+  transform: scale(1.1);
+}
+
+button:focus:not(:active) {
+  transform: scale(1);
+}
+
+@media screen and (max-width: 1024px) {
+  button {
+		width: 222px;
+    height: 40px;
+		font-size: 20px;
+		margin-top: 4px;
+		margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  button {
+    width: 222px;
+    height: 45px;
+		font-size: 20px;
+		margin-top: 4px;
+		margin-bottom: 0;
+  }
+}
