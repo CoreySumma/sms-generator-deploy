@@ -1,10 +1,12 @@
 <div id="description" align="center">
 
-<u>SMS AI Generator</u>
+### SMS AI Generator
 
 <img
     src="src/assets/textmessage.png"
 />
+
+## Screen Shot:
 <img
     src="src/assets/SMSss.png"
     width="800" height="400"
