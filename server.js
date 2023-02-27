@@ -1,5 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+const pino = require("express-pino-logger")();
 require('dotenv').config();
 const client = require("twilio")(
   process.env.REACT_APP_TWILIO_ACCOUNT_SID,
@@ -10,6 +11,7 @@ const client = require("twilio")(
 const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+app.use(pino);
 
 app.get("/api/greeting", (req, res) => {
   const name = req.query.name || "World";
