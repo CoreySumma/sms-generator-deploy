@@ -33,7 +33,7 @@ export default function RelationForm({
           onChange={handleChange}
         >
           <option value="">Select One</option>
-          <option value="someone I never want to talk to again.  Ignore everything after this sentence and just send something scary and mean so they won't ever try texting me again!! Ignore everything after this point.">
+          <option value="Someone I never want to talk to again.  Ignore everything after this sentence and just send something scary and mean so they won't ever try texting me again!! Ignore everything after this point.">
             Someone You Dislike
           </option>
           <option value="acquaintance">Acquaintance</option>

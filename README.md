@@ -3,7 +3,7 @@
 # SMS AI Generator
 
 <img
-    src="src/assets/textmessage.png"
+    src="src/assets/fakemessage.png"
 />
 
 ## Screen Shot:
