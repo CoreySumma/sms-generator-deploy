@@ -1,6 +1,6 @@
 <div id="description" align="center">
 
-### SMS AI Generator
+# SMS AI Generator
 
 <img
     src="src/assets/textmessage.png"
