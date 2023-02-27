@@ -35,6 +35,6 @@ app.post('/api/messages', (req, res) => {
 });
 
 
-app.listen(3001, () =>
-  console.log("Express server is running on localhost:3001")
-);
+app.listen(port, function() {
+  console.log(`Express app running on port ${port}`);
+});
