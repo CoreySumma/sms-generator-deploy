@@ -36,7 +36,7 @@ app.post('/api/messages', (req, res) => {
     });
 });
 
-
-app.listen(port, function() {
-  console.log(`Express app running on port ${port}`);
-});
+const port = process.env.PORT || 3001;
+app.listen(port, () =>
+  console.log(`Express server is running on port ${port}`)
+);

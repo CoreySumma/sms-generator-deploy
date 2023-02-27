@@ -13,9 +13,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "server": "node-env-run server --exec nodemon | pino-colada",
-    "dev": "run-p server start"
+    "server": "nodemon server.js | pino-colada",
+    "dev": "concurrently \"npm run server\" \"npm run start\"",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "proxy": "http://localhost:3001",
   "eslintConfig": {
