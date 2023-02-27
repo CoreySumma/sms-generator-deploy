@@ -29,7 +29,7 @@ button {
   overflow: hidden;
   cursor: pointer;
   font-family: "Poppins", sans-serif;
-  transition: all 0.1s ease-in-out !important; 
+  transition: all 400ms ease-in-out !important ; 
 }
 
 button:hover {
@@ -37,7 +37,13 @@ button:hover {
   border: rgb(37, 173, 137) solid 1px;
   color: white;
 	transition: background-color, border-color, color;
+	transform: scale(1.1);
 }
+
+button:not(:hover) {
+transform: scale(1.0);
+}
+
 
 button:focus {
   transform: scale(1.1);
