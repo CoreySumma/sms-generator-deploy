@@ -3,6 +3,9 @@
 <u>SMS AI Generator</u>
 
 <img
+    src="src/assets/textmessage.png"
+/>
+<img
     src="src/assets/SMSss.png"
     width="800" height="400"
 />
