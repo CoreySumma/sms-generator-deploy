@@ -44,7 +44,7 @@ export default class SMSForm extends Component {
     event.preventDefault();
     this.setState({ submitting: true });
     console.log("Request Payload:", JSON.stringify(this.state.message));
-    fetch(url, {
+    fetch("/api/messages", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
