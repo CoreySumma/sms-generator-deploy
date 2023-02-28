@@ -72,38 +72,6 @@ export default class SMSForm extends Component {
           submitting: false,
         });
       });
-
-    const { to, body } = this.state.message;
-
-    const url = `https://api.twilio.com/2010-04-01/Accounts/${accountSid}/Messages`;
-    const accountSid = process.env.REACT_APP_TWILIO_ACCOUNT_SID;
-    const authToken = process.env.REACT_APP_TWILIO_AUTH_TOKEN;
-    const phoneNumber = process.env.REACT_APP_TWILIO_PHONE_NUMBER;
-
-    const data = {
-      To: to,
-      Body: body,
-      From: phoneNumber,
-    };
-
-    fetch(url, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/x-www-form-urlencoded",
-        Authorization: `Basic ${btoa(`${accountSid}:${authToken}`)}`,
-      },
-      body: new URLSearchParams(data),
-    })
-      .then((res) => {
-        if (res.ok) {
-          console.log("SMS sent successfully");
-        } else {
-          console.error("Error sending SMS");
-        }
-      })
-      .catch((error) => {
-        console.error("Error sending SMS:", error);
-      });
   }
   render() {
     return (
