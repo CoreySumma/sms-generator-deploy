@@ -35,10 +35,16 @@ export default class SMSForm extends Component {
   }
 
   onSubmit(event) {
+    const accountSid = process.env.REACT_APP_TWILIO_ACCOUNT_SID;
+    const authToken = process.env.REACT_APP_TWILIO_AUTH_TOKEN;
+    const phoneNumber = process.env.REACT_APP_TWILIO_PHONE_NUMBER;
+    
+    const url = `https://api.twilio.com/2010-04-01/Accounts/${accountSid}/Messages`;
+
     event.preventDefault();
     this.setState({ submitting: true });
     console.log("Request Payload:", JSON.stringify(this.state.message));
-    fetch("/api/messages", {
+    fetch(url, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
