@@ -22,6 +22,7 @@ app.post(url, (req, res) => {
       body: req.body.body
     })
     .then(() => {
+      console.log("Response:", JSON.stringify({ success: true }));
       res.send(JSON.stringify({ success: true }));
     })
     .catch(err => {
