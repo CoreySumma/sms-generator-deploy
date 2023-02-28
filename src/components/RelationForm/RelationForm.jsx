@@ -23,7 +23,7 @@ export default function RelationForm({
   return (
     <form>
       <div className="response-form">
-        <label id="larger" htmlFor="relation">Relation To You:</label>
+        <label id="larger" htmlFor="relation">Relation To Yoou:</label>
         <hr />
         <select
           className="selector"
