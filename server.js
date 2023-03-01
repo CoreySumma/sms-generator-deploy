@@ -6,14 +6,14 @@ const client = require("twilio")(
   process.env.REACT_APP_TWILIO_ACCOUNT_SID,
   process.env.REACT_APP_TWILIO_AUTH_TOKEN
 ); 
-
+const accountSid = process.env.REACT_APP_TWILIO_ACCOUNT_SID;
 const url = `https://api.twilio.com/2010-04-01/Accounts/${accountSid}/Messages.json`;
 
 const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-app.post(url, (req, res) => {
+app.post('/api/messages', (req, res) => {
   res.header('Content-Type', 'application/json');
   client.messages
     .create({
@@ -22,8 +22,9 @@ app.post(url, (req, res) => {
       body: req.body.body
     })
     .then(() => {
-      console.log("Response:", JSON.stringify({ success: true }));
+      console.log(client.messages)
       res.send(JSON.stringify({ success: true }));
+      console.log(res)
     })
     .catch(err => {
       console.log(err);
