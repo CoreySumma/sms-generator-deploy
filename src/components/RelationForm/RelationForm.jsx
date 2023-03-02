@@ -46,7 +46,7 @@ export default function RelationForm({
         </select>
       </div>
       <button id="btn" className="response-btn" onClick={handleSubmit}>
-        <p>Generate Response</p>
+        <p>Generate</p>
       </button>
     </form>
   );
