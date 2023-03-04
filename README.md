@@ -13,7 +13,7 @@
 />
 
 ## Description:
-This is a React application that utilizes Open AI's API, and Trilio's API to generate a random text to someone who is calling(Poen AI), and send it(Twilio), so you can have some fun while filtering calls.
+This is a React application that utilizes Open AI's API, and Trilio's API to generate a random text to someone who is calling(OpenAI), and send it(Twilio), so you can have some fun while filtering calls.
 
 ## Using the App
 </div>
