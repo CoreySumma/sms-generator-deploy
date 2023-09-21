@@ -31,6 +31,7 @@ This is a React application that utilizes Open AI's API, and Trilio's API to gen
 - Send it!!
 
 [Click here to get started!](https://sms-ai-generator.herokuapp.com/)
+
 <div align='center'>
 
 ![CSS](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white)
