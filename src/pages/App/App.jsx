@@ -3,15 +3,10 @@ import logo from "../../assets/restriction.png";
 import "./App.css";
 import SMSForm from "../../components/SMSForm/SMSForm";
 import RelationForm from "../../components/RelationForm/RelationForm";
-import { Configuration, OpenAIApi } from "openai";
 import { useState, useEffect } from "react";
 import axios from 'axios';
 
 export default function App() {
-  const configuration = new Configuration({
-    apiKey: process.env.REACT_APP_OPEN_AI_KEY,
-  });
-  const openai = new OpenAIApi(configuration);
   const [result, setResult] = useState("");
   const [relationData, setRelationData] = useState("");
 
